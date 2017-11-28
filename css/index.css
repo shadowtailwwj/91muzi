@@ -65,10 +65,8 @@ a{
 }
 
 .activity{
-    height: auto;
-    width: 1300px;
+    height: 100%;
     margin-top: 40px;
-    margin-left: 190px;
 }
 .title{
     font-size: 32px;
@@ -81,19 +79,35 @@ a{
 
 .img_list{
     margin-top: 60px;
+    margin-left: 190px;
 }
 
 .img_list li{
     list-style-type:none;
     float: left;
     margin-right: 64px;
-
 }
 
 .plan{
-    height: auto;
-    margin-top: 40px;
-    margin-left: 190px;
+    background-color:#F5F5F5;
+    height:408px;
+    margin-top: 86px;
+}
+.plan_title{
+    font-size: 32px;
+    font-weight: bold;
+    text-align:center;
+    padding-top: 50px;
+}
+
+.plan li{
+    list-style-type:none;
+    float: left;
+    margin-right: 220px;
+    margin-top: 66px;
+}
+.plan ul{
+    margin-left: 280px;
 }
 
 
