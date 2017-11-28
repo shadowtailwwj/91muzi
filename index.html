@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>91木子</title>
+<link rel="stylesheet" href="dist/pageSwitch.min.css">
+<link rel="stylesheet" rev="stylesheet" href="css/index.css" type="text/css" />
+
+	<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	html,body{
+		height: 100%;
+	}
+	#container {
+			width: 100%;
+			height: 500px;
+			overflow: hidden;
+	}
+	.sections,.section {
+		height:100%;
+	}
+	#container,.sections {
+		position: relative;
+	}
+	.section {
+		background-color: #000;
+		background-size: cover;
+		background-position: 50% 50%;
+		text-align: center;
+		color: white;
+	}
+	#section0 {
+		background-image: url('images/01.jpg');
+	}
+	#section1 {
+		background-image: url('images/02.jpg');
+	}
+	#rollText{font:12px /20px verdana;}
+</style>
+
+
+</head>
+<body>
+<div class="navinfo">
+	<div class="nav">
+		<ul>
+			<img class="logo" src="images/logo.png" alt="">
+			<li><a href="#nv2" ><span class="nv2">首页官网</span></a></li>
+			<li><a href="#nv3" ><span class="nv3">活动中心</span></a></li>
+			<li style="width: 133px;"><a href="#nv4" ><img src="images/01.png"><span class="nv4" style="color:#FFA800">会员中心</span></a></li>
+			<li><a href="#nv5" ><span class="nv5">经典案例</span></a></li>
+			<li><a href="#nv6" ><span class="nv6">常见问题</span></a></li>
+			<li><a href="#nv7" ><span class="nv7">接入手册</span></a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="container">
+	<div class="sections">
+		<div class="section" id="section0"><h3></h3></div>
+		<div class="section" id="section1"><h3></h3></div>
+	</div>
+</div>
+
+<div class="roll">
+	<img src="images/laba.png" class="laba">
+	<h5>最新公告</h5>
+	<div id="news">
+		<ul>
+			<li>长春最高温或创新低内蒙古局地大雪呼和浩特气温将创新低西各地秋高气爽 安徽强冷空气即将上线 ·甘肃民乐大面积霜冻 ·海葵对海南影响减弱</li>
+			<li>长春最高温或创新低内蒙古局地大雪呼和浩特气温将创新低西各地秋高气爽 安徽强冷空气即将上线 ·甘肃民乐大面积霜冻 ·海葵对海南影响减弱</li>
+		</ul>
+	</div>
+</div>
+
+<div class="activity">
+	<div class="title">活动中心<img class="xia" src="images/xia.png" alt=""></div>
+
+	<div class="img_list">
+		<ul>
+			<li>
+				<figure>
+					<img src="images/1.jpg" alt="">
+					<p>黄浦江上的的卢浦大桥</p>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="images/1.jpg" alt="">
+					<p>黄浦江上的的卢浦大桥</p>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="images/1.jpg" alt="">
+					<p>黄浦江上的的卢浦大桥</p>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="images/1.jpg" alt="">
+					<p>黄浦江上的的卢浦大桥</p>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="images/1.jpg" alt="">
+					<p>黄浦江上的的卢浦大桥</p>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="images/1.jpg" alt="">
+					<p>黄浦江上的的卢浦大桥</p>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="images/1.jpg" alt="">
+					<p>黄浦江上的的卢浦大桥</p>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="images/1.jpg" alt="">
+					<p>黄浦江上的的卢浦大桥</p>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="images/1.jpg" alt="">
+					<p>黄浦江上的的卢浦大桥</p>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="images/1.jpg" alt="">
+					<p>黄浦江上的的卢浦大桥</p>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="images/1.jpg" alt="">
+					<p>黄浦江上的的卢浦大桥</p>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="images/1.jpg" alt="">
+					<p>黄浦江上的的卢浦大桥</p>
+				</figure>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="plan">
+	
+</div>
+
+<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="dist/pageSwitch.min.js"></script>
+<script>
+	$("#container").PageSwitch({
+		direction:'horizontal',
+		easing:'ease-in',
+		duration:1000,
+		autoPlay:true,
+		loop:'false'
+	});
+    $(function() {
+        var $this = $("#news");
+        var scrollTimer;
+        $this.hover(function() {
+            clearInterval(scrollTimer);
+        }, function() {
+            scrollTimer = setInterval(function() {
+                scrollNews($this);
+            }, 2000);
+        }).trigger("mouseleave");
+
+        function scrollNews(obj) {
+            var $self = obj.find("ul");
+            var lineHeight = $self.find("li:first").height();
+            $self.animate({
+                "marginTop": -lineHeight + "px"
+            }, 600, function() {
+                $self.css({
+                    marginTop: 0
+                }).find("li:first").appendTo($self);
+            })
+        }
+    })
+</script>
+</body>
+</html>

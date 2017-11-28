@@ -1,0 +1,99 @@
+a{
+    text-decoration:none;
+}
+
+.navinfo{
+    height: 90px;
+    background-color: #000000;
+}
+.nav{
+    margin-left: 190px;
+    /*margin: 0 auto;*/
+}
+
+.nav li{
+    margin-left: 40px;
+    float:left;
+    width:110px;
+    text-align:center;
+    line-height:90px;
+}
+.logo{
+    float:left;
+   margin-top: 22px;
+}
+.nav ul{
+
+}
+.nav li> a{
+    display:block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff0000;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+}
+
+.roll{
+    height: 40px;
+    background-color: #F6F6F6;
+}
+
+#news{
+    height:40px;
+    overflow: hidden;
+    float: left;
+    margin-left: 20px;
+}
+
+.roll h5{
+    float: left;
+    line-height: 40px;
+
+}
+
+.roll img{
+    float: left;
+    margin-top: 10px;
+    margin-left: 190px;
+}
+#news ul li{
+    line-height: 40px;
+    color: #666666;
+}
+
+.activity{
+    height: auto;
+    width: 1300px;
+    margin-top: 40px;
+    margin-left: 190px;
+}
+.title{
+    font-size: 32px;
+    font-weight: bold;
+    text-align:center;
+}
+.xia{
+    margin-left: 10px;
+}
+
+.img_list{
+    margin-top: 60px;
+}
+
+.img_list li{
+    list-style-type:none;
+    float: left;
+    margin-right: 64px;
+
+}
+
+.plan{
+    height: auto;
+    margin-top: 40px;
+    margin-left: 190px;
+}
+
+
